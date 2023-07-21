@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 import axios from 'axios';
 
 const useFetch = (endpoint, query) => {
@@ -6,7 +7,7 @@ const useFetch = (endpoint, query) => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const axios = require('axios');
+    // const axios = require('axios');
 
     const options = {
         method: 'GET',
@@ -25,7 +26,6 @@ const useFetch = (endpoint, query) => {
             const response = await axios.request(options);
             setData(response.data.data);
             setIsLoading(false);
-            console.log(response.data);
         } catch (error) {
             setError(error);
             alert('Tam jest błąd');

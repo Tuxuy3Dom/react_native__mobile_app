@@ -12,12 +12,16 @@ const Popularjobs = () => {
 
   const { data, isLoading, error} = useFetch(
     'search', {
-      query: 'React Developer',
+      query: 'Frontend developer',
       num_pages: 1
     }
   )
 
-  console.log(data)
+  const [selectedJob, setSelectedJob] = useState();
+
+  const handleCardPress = (item) => {
+
+  }
 
   return (
     <View style={styles.container}>
@@ -31,13 +35,17 @@ const Popularjobs = () => {
         {isLoading ? (
           <ActivityIndicator size="large" color={COLORS.primary} />
         ) : error ? (
-          <Text>Coś poszło nie tak</Text>
+          <Text>
+            `Coś poszło nie tak`
+          </Text>
         ) : (
           <FlatList 
-            data={[1, 2, 3, 4, 5, 6, 7, 8]}
+            data={data}
             renderItem={({ item }) => (
               <PopularJobCard 
                 item={item}
+                selectedJob={selectedJob}
+                handleCardPress={handleCardPress}
               />
             )}
             keyExtractor={item => item?.job_id}
