@@ -10,14 +10,14 @@ Use RapidAPI web page [RapidAPI](https://rapidapi.com) Discover and connect to t
 
 Use JSearch on RapidAPI[RapidAPIJSearch](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) Subscribe for work API job search.
 
-Use your [X-RapidAPI-Key] In these files [hook/useFetch.js][search/[id].js], add the API key to your own.
+Use your [X-RapidAPI-Key] In these files [hook/useFetch.js][app/search/[id].js], add the API key to your own.
 
 Max free requests 200/mount.
 
 ### Used install 
 
 ```sh
-npm install -g expo-cli
+npm install yet
 ```
 
 ### Commands for run aplication
@@ -26,12 +26,12 @@ npm install -g expo-cli
 npm start
 ```
 
-#### Or
+#### Or. When expo is installed.
 
 ```sh
 expo-cli start --tunnel
 ```
 
-### Expo Go - aplikation for connect my phone with my aplication QR code for connect
+### Expo Go - aplication for connect with phone with the aplication. By QR code for connect aplication
 
 Download [Expo Go](https://expo.dev/client?utm_source=google&utm_medium=cpc&utm_content=performancemax&gclid=Cj0KCQjw_O2lBhCFARIsAB0E8B_fJsng-U0ioJ6-E6yta22vCn4F4JNH4ayVGAqGmb2-XT9uf3xRMm4aAlRJEALw_wcB)
